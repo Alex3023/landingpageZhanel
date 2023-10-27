@@ -1,0 +1,55 @@
+{
+    "header":{
+        "headerPrincipal":"NATIONWIDE SHIPPING",
+        "idioma":"English",
+        "sesion":"Log in",
+        "promo": "Promotions",
+        "liqui": "Settlement",
+        "pedido": "My orders"
+    },
+
+    "deslizable":{
+        "cuadro":"New collection",
+        "ver":"SEE MORE"
+    },
+
+    "novedadComen":{
+        "cuadro1":"LEARN ABOUT OUR OFFERS",
+        "ver1":"SEE",
+        "cuadro2":"WE HAVE NEW THINGS FOR YOU",
+        "ver2":"I WANT TO KNOW",
+        "reseña1": "QUALITY AND COMFORT IN EVERY STEP",
+        "opinion1":"I have been a Calzados Zhanel customer for over a year and every purchase exceeds my expectations. The quality of the materials is simply incomparable; You can see the care and dedication in every detail, from the seams to the finishes...",
+        "reseña2": "WARMTH AND ELEGANCE IN EVERY DETAIL",
+        "opinion2": "Since my wife discovered Calzados Zhanel, it has become her favorite store to buy shoes. What fascinates him most is the originality and freshness of the designs they offer. Each piece seems to tell a unique story, reflecting a perfect harmony between modern and classic...",
+        "reseña3": "PERSONALIZED ATTENTION THAT MAKES THE DIFFERENCE",
+        "opinion3": "What really stands out is the patience and dedication of the sales team. They are always willing to help me find the perfect pair, offering honest recommendations tailored to my needs and preferences. Additionally, their in-depth knowledge of each product, from materials to care tips, gives me confidence and security in every purchase..."
+    },
+
+    "footer":{
+        "envio":"Shipping & Returns",
+        "redes":"Social networks",
+        "text1":"About us",
+        "text2":"After Sales Service",
+        "text3":"Corporate Sales",
+        "text4":"Complaints book",
+        "text5":"Electronic billing",
+        "text6":"Frequent questions",
+        "text7":"Privacy policies",
+        "text8":"Guarantee and Conservation of leather",
+        "text9":"Terms and Conditions",
+        "text10":"Cookie Settings",
+        "text11":"Contact us",
+        "text12":"Our store",
+        "tienda":"Store",
+        "enlaces": "Links of interest",
+        "derechos": "2023 Calzados C'Zhanel. All rights reserved"
+    },
+
+    "formLogIn":{
+        "sesion2": "Log In",
+        "entrar":"ENTER",
+        "nocuenta":"Don't you have an account yet?",
+        "crearcuenta": "CREATE AN ACCOUNT"
+    }
+}

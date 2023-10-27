@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calzados C'Zhanel</title>
+    <link rel="icon" href="./Imagenes/Logo de Calzados Zhanel Solo.png">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="relative pt-16">
+    <header class="bg-gray-100 w-full fixed top-0 z-40 dark:bg-gray-600">
+        <div class="bg-black flex items-center justify-center py-3">
+            <p class="text-white text-xs" data-section="header" data-value="headerPrincipal">ENVÍOS A NIVEL NACIONAL</p>
+        </div>
+        <div class="flex items-center justify-between">
+
+            <div class="flex items-center gap-10">
+                <div class="lg:hidden">
+                    <button id="botonMenu" class="icon fa-solid fa-bars px-2 py-2 ml-6 fa-lg"></button>
+                </div>
+                <div class="hidden lg:flex items-center ml-5 cursor-pointer relative">
+                    <div id="botonIdiomaDeskop" class="flex items-center px-2 p-1 border-black border-2 rounded-md dark:border-white dark:bg-slate-900">
+                        <p class="font-nunito font-bold text-black dark:text-white pr-2" data-section="header" data-value="idioma">
+                            Idioma
+                        </p>
+                        <i class="icon fa-solid fa-language fa-xl" style="color: #000000;"></i>
+                        <i id="triReverse" class="icon fa-solid fa-caret-down pl-2" style="color: #4b5563;"></i>
+                    </div>
+
+                    <ul id="idiomaDeskop" class="flex-col absolute top-8 bg-gray-300 font-nunito font-semibold border-t border-black dark:text-white dark:border-white border-2 rounded-b-md hidden">
+                        <li data-language="es">
+                            <div class="flex items-center justify-center cursor-pointer border-b py-3 hover:bg-blue-100 dark:hover:bg-gray-600 gap-2 px-6 dark:bg-slate-900" data-language="es">
+                                <img src="./Imagenes/espana.png" alt="Bandera de España" class="w-5 h-5">
+                                <p>Español</p>
+                            </div>
+                        </li>
+        
+                        <li data-language="en">
+                            <div class="flex items-center justify-center cursor-pointer border-b py-3 hover:bg-blue-100 dark:hover:bg-gray-600 gap-2 px-6 dark:bg-slate-900" data-language="en">
+                                <img src="./Imagenes/estados-unidos.png" alt="Bandera de EEUU" class="w-5 h-5">
+                                <p>English</p>
+                            </div>
+                        </li>
+        
+                        <li data-language="fr">
+                            <div class="flex items-center justify-center cursor-pointer border-b py-3 hover:bg-blue-100 dark:hover:bg-gray-600 gap-2 px-6 dark:bg-slate-900" data-language="fr">
+                                <img src="./Imagenes/francia.png" alt="Bandera de Francia" class="w-5 h-5">
+                                <p>Français</p>
+                            </div>
+                        </li>
+        
+                        <li data-language="de">
+                            <div class="flex items-center justify-center cursor-pointer border-b py-3 hover:bg-blue-100 dark:hover:bg-gray-600 gap-2 px-6 dark:bg-slate-900" data-language="de">
+                                <img src="./Imagenes/alemania.png" alt="Bandera de Alemania" class="w-5 h-5">
+                                <p>Deutsch</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button id="botonBuscar" class="icon fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></button>
+            </div>
+            
+            <div class="pl-3 lg:pl-18">
+                <img src="./Imagenes/Logo de Calzados Zhanel.png" alt="Logo de C'Zhanel" class="w-48">
+            </div>
+
+            <div class="ml-2 flex items-center gap-4">
+                <div class="hidden lg:flex">
+                    <button id="btnUbicacion" class="icon fa-solid fa-location-dot fa-lg" style="color: #000000;"></button>
+                </div>
+                <div class="hidden lg:flex">
+                    <button id="btnUser" class="icon fa-regular fa-user fa-lg" style="color: #000000;"></button>
+                </div>
+                <div id="btn_dark" class="bg-white dark:bg-violet-950 rounded-2xl flex items-center relative h-7 w-12 cursor-pointer pl-0.5 shadow-custom-shadow dark:shadow-custom-shadow">
+                    <div id="btn_indicador" class="flex items-center justify-center rounded-full bg-white shadow-xl duration-1000 w-6 h-6">
+                        <div id="btn_container" class="flex items-center justify-center h-4 w-4">
+                            <i class="fa-solid fa-sun fa-sm" style="color: #ffde59;"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon fa-solid fa-cart-shopping fa-lg mr-6" style="color: #000000;"></button>
+            </div>
+        </div>
+
+        <div class="py-3 hidden lg:flex lg:justify-center">
+            <ul class="flex items-center justify-center gap-10">
+                <li class="text-gray-600 hover:text-red-700 cursor-pointer dark:text-white dark:hover:text-red-400 font-nunito font-semibold">
+                    <p data-section="header" data-value="sesion">Iniciar Sesión</p>
+                </li>
+    
+                <li class="nunito text-gray-600 hover:text-red-700 cursor-pointer dark:text-white dark:hover:text-red-400 font-nunito font-semibold">
+                    <p data-section="header" data-value="promo">Promociones</p>
+                </li>
+    
+                <li class="nunito text-gray-600 hover:text-red-700 cursor-pointer dark:text-white dark:hover:text-red-400 font-nunito font-semibold">
+                    <p data-section="header" data-value="liqui">Liquidación</p>
+                </li>
+    
+                <li class="nunito text-gray-600 hover:text-red-700 cursor-pointer dark:text-white dark:hover:text-red-400 font-nunito font-semibold">
+                    SALE
+                </li>
+    
+                <li class="nunito text-gray-600 hover:text-red-700 cursor-pointer dark:text-white dark:hover:text-red-400 font-nunito font-semibold">
+                    <p data-section="header" data-value="pedido">Mis pedidos</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="buscar" class="hidden">
+            <div class="flex items-center justify-center py-2 border-t border-b">
+                <input type="text" class="border-b border-gray-300 bg-gray-100 w-96 px-2 focus:outline-none" placeholder="Busca por palabra clave">
+            </div>
+        </div>
+    </header>
+
+    <!--Mobile-->
+
+    <div id="menu" class="h-full bg-white dark:bg-slate-900 border-r border-gray-300 fixed left-0 top-0 w-80 z-50 transform -translate-x-full transition-transform duration-300 lg:hidden">
+        <div class="border-b border-gray-300 flex items-center justify-between gap-3">
+            <img src="./Imagenes/Logo de Calzados Zhanel Solo.png" alt="Logo Circular" class="pl-7 py-4 h-20">
+            <i id="cerrar" class="icon fa-solid fa-x fa-lg pr-6 cursor-pointer" style="color: #4b5563;"></i>
+        </div>
+
+        <ul class="flex flex-col pt-9 pl-7">
+            <li id="btnUserMobile" class="pb-5 font-nunito font-semibold text-gray-600 dark:text-white hover:text-red-700 dark:hover:text-red-400 cursor-pointer">
+                <p data-section="header" data-value="sesion">Iniciar Sesión</p>
+            </li>
+
+            <li class="pb-5 font-nunito font-semibold text-gray-600 dark:text-white hover:text-red-700 dark:hover:text-red-400 cursor-pointer">
+                <p data-section="header" data-value="promo">Promociones</p>
+            </li>
+
+            <li class="pb-5 font-nunito font-semibold text-gray-600 dark:text-white hover:text-red-700 dark:hover:text-red-400 cursor-pointer">
+                <p data-section="header" data-value="liqui">Liquidación</p>
+            </li>
+
+            <li class="pb-5 font-nunito font-semibold text-gray-600 dark:text-white hover:text-red-700 dark:hover:text-red-400 cursor-pointer">
+                SALE
+            </li>
+
+            <li class="pb-5 font-nunito font-semibold text-gray-600 dark:text-white hover:text-red-700 dark:hover:text-red-400 cursor-pointer">
+                <p data-section="header" data-value="pedido">Mis pedidos</p>
+            </li>
+
+            <li id="botonIdiomaMenu" class="pb-5 font-nunito font-semibold text-gray-600 dark:text-white hover:text-red-700 dark:hover:text-red-400 cursor-pointer flex items-center justify-between">
+                <div class="flex items-center justify-between gap-3">
+                    <button class="icon fa-solid fa-globe" style="color: #4b5563;"></button>
+                    <p data-section="header" data-value="idioma">Idioma</p>
+                </div>
+                <button id="botonMasIdioma" class="icon fa-solid fa-plus pr-7" style="color: #4b5563;"></button>
+            </li>
+
+            <!--Mobile-->
+
+            <ul id="idiomasMobile" class="flex-col font-nunito font-semibold text-gray-600 dark:text-white hidden">
+                <li data-language="es">
+                    <div class="flex items-center cursor-pointer border-b py-3 hover:bg-blue-100 dark:hover:bg-gray-600 pl-2 mr-7" data-language="es">
+                        <img src="./Imagenes/espana.png" alt="Bandera de España" class="w-5 h-5">
+                        <p class="pl-2">Español</p>
+                    </div>
+                </li>
+
+                <li data-language="en">
+                    <div class="flex items-center cursor-pointer border-b py-3 hover:bg-blue-100 dark:hover:bg-gray-600 pl-2 mr-7" data-language="en">
+                        <img src="./Imagenes/estados-unidos.png" alt="Bandera de EEUU" class="w-5 h-5">
+                        <p class="pl-2">English</p>
+                    </div>
+                </li>
+
+                <li data-language="fr">
+                    <div class="flex items-center cursor-pointer border-b py-3 hover:bg-blue-100 dark:hover:bg-gray-600 pl-2 mr-7" data-language="fr">
+                        <img src="./Imagenes/francia.png" alt="Bandera de Francia" class="w-5 h-5">
+                        <p class="pl-2">Français</p>
+                    </div>
+                </li>
+
+                <li data-language="de">
+                    <div class="flex items-center cursor-pointer border-b py-3 hover:bg-blue-100 dark:hover:bg-gray-600 pl-2 mr-7" data-language="de">
+                        <img src="./Imagenes/alemania.png" alt="Bandera de Alemania" class="w-5 h-5">
+                        <p class="pl-2">Deutsch</p>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="w-full relative overflow-hidden">
+        <div id="slider" class="flex transition-transform duration-500">
+            <div class="w-full flex-shrink-0 relative">
+                <img class="w-full" src="./Imagenes/principal1.jpg" alt="Imagen1">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                    <p class="text-black text-xl mb-4 font-IBM text-center lg:text-2xl" data-section="deslizable" data-value="cuadro">
+                        Nueva Colección 2023
+                    </p>
+                    <button class="bg-black text-white px-4 py-2 rounded font-playfair hover:bg-white hover:text-black focus:ring focus:ring-white">
+                        <p data-section="deslizable" data-value="ver">VER MÁS</p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-full flex-shrink-0 relative">
+                <img class="w-full" src="./Imagenes/principal2.jpg" alt="Imagen2">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                    <p class="text-black text-xl mb-4 font-IBM text-center lg:text-2xl" data-section="deslizable" data-value="cuadro">
+                        Nueva Colección 2023
+                    </p>
+                    <button class="bg-black text-white px-4 py-2 rounded font-playfair hover:bg-white hover:text-black focus:ring focus:ring-white">
+                        <p data-section="deslizable" data-value="ver">VER MÁS</p>
+                    </button>
+                </div>
+            </div>
+                
+            <div class="w-full flex-shrink-0 relative">
+                <img class="w-full" src="./Imagenes/principal3.jpg" alt="Imagen3">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                    <p class="text-black text-xl mb-4 font-IBM text-center lg:text-2xl" data-section="deslizable" data-value="cuadro">
+                        Nueva Colección 2023
+                    </p>
+                    <button class="bg-black text-white px-4 py-2 rounded font-playfair hover:bg-white hover:text-black focus:ring focus:ring-white">
+                        <p data-section="deslizable" data-value="ver">VER MÁS</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row py-12 px-12 gap-12 dark:bg-gris-marron">
+        <div class="flex relative">
+            <img src="./Imagenes/muestra1.jpg" alt="Entérate">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                <p class="text-white text-xl b-4 font-IBM text-center" data-section="novedadComen" data-value="cuadro1">
+                    ENTÉRATE DE NUESTRAS OFERTAS
+                </p>
+                <button class="bg-black text-white px-6 py-2 rounded font-playfair hover:bg-white hover:text-black focus:ring focus:ring-white">
+                    <p data-section="novedadComen" data-value="ver1">VER</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex relative">
+            <img src="./Imagenes/muestra5.jpg" alt="Novedades">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                <p class="text-white text-xl b-4 font-IBM text-center" data-section="novedadComen" data-value="cuadro2">
+                    TENEMOS NOVEDADES PARA TI
+                </p>
+                <button class="bg-black text-white px-6 py-2 rounded font-playfair hover:bg-white hover:text-black focus:ring focus:ring-white">
+                    <p data-section="novedadComen" data-value="ver2">QUIERO SABER</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-blue-100 dark:bg-gris-claro dark:text-celeste-claro py-10 px-10 flex flex-col gap-10 lg:flex-row">
+        <div class="bg-white dark:bg-gris-marron  px-5 pt-12 pb-6 relative">
+            <div class="rounded-full bg-blue-500 dark:bg-morado flex items-center justify-center w-9 h-9 absolute -top-4">
+                <i class="fa-solid fa-quote-left " style="color: #ffffff;"></i>
+            </div>
+            <h1 class="font-montserrat text-xl" data-section="novedadComen" data-value="reseña1">
+                CALIDAD Y CONFORT EN CADA PASO
+            </h1>
+            <div>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+            </div>
+            <br>
+            <p class="font-raleway" data-section="novedadComen" data-value="opinion1">
+                He sido cliente de Calzados Zhanel por más de un año y cada compra supera mis expectativas. La calidad de los materiales es simplemente incomparable; se nota el cuidado y la dedicación en cada detalle, desde las costuras hasta los acabados...
+            </p>
+            <p class="font-raleway font-bold pt-8">
+                Erick Cabanillas Guimaray
+            </p>
+        </div>
+
+        <div class="bg-white dark:bg-gris-marron px-5 pt-12 pb-6 relative">
+            <div class="rounded-full bg-blue-500 dark:bg-morado flex items-center justify-center w-9 h-9 absolute -top-4">
+                <i class="fa-solid fa-quote-left " style="color: #ffffff;"></i>
+            </div>
+            <h1 class="font-montserrat text-xl" data-section="novedadComen" data-value="reseña2">
+                CALIDEZ Y ELEGANCIA EN CADA DETALLE
+            </h1>
+            <div>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+            </div>
+            <br>
+            <p class="font-raleway" data-section="novedadComen" data-value="opinion2">
+                Desde que mi esposa descubrió Calzados Zhanel, se ha convertido en su tienda favorita para comprar zapatos. Lo que más le fascina es la originalidad y frescura de los diseños que ofrecen. Cada pieza parece contar una historia única, reflejando una perfecta armonía entre lo moderno y lo clásico...
+            </p>
+            <p class="font-raleway font-bold pt-8">
+                Andre Diaz Jaramillo
+            </p>
+        </div>
+
+        <div class="bg-white dark:bg-gris-marron px-5 pt-12 pb-6 relative">
+            <div class="rounded-full bg-blue-500 dark:bg-morado flex items-center justify-center w-9 h-9 absolute -top-4">
+                <i class="fa-solid fa-quote-left " style="color: #ffffff;"></i>
+            </div>
+            <h1 class="font-montserrat text-xl" data-section="novedadComen" data-value="reseña3">
+                ATENCIÓN PERSONALIZADA QUE MARCA LA DIFERENCIA
+            </h1>
+            <div>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+                <i class="fa-solid fa-star" style="color: #afab0c;"></i>
+            </div>
+            <br>
+            <p class="font-raleway" data-section="novedadComen" data-value="opinion3">
+                Lo que realmente destaco es la paciencia y dedicación del equipo de ventas. Están siempre dispuestos a ayudarme a encontrar el par perfecto, ofreciendo recomendaciones honestas y ajustadas a mis necesidades y preferencias. Además, su conocimiento profundo sobre cada producto, desde los materiales hasta los consejos de cuidado, me brinda confianza y seguridad en cada compra...
+            </p>
+            <p class="font-raleway font-bold pt-8">
+                Arnie Molina Vasquez
+            </p>
+        </div>
+
+    </div>
+
+    <footer class="bg-gray-600 dark:bg-slate-900">
+        <div class="flex items-center">
+            <div class="flex-1 flex items-center justify-center pr-3">
+                <i class="fa-solid fa-box-open pl-4 pr-1" style="color: #ffffff;"></i>
+                <a class="text-white hover:text-red-700 dark:hover:text-red-400 font-nunito font-semibold" href="" data-section="footer" data-value="envio">
+                    Envío y devoluciones
+                </a>
+            </div>
+    
+            <div class="flex items-center border-l border-r p-1 lg:p-6">
+                <a href="">
+                    <img src="./Imagenes/Libro de Reclamaciones.jpg" alt="Libro de Reclamaciones" class="lg:h-40">
+                </a>
+            </div>
+    
+            <div class="flex-1">
+                
+                <h1 class="text-white flex items-center justify-center pt-3 font-nunito font-semibold" data-section="footer" data-value="redes">
+                    Redes Sociales
+                </h1>
+    
+                <div class="flex items-center justify-center gap-4 py-3 px-3">
+                    <button class="rounded-full bg-blue-700 h-9 w-9">
+                        <i class="fa-brands fa-facebook-f fa-xl" style="color: #fefefe;"></i>
+                    </button>
+        
+                    <button class="rounded px-1 bg-gradient-to-l from-pink-600 to-yellow-400 h-9 w-9">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                    </button>
+        
+                    <button class="rounded bg-blue-500 h-9 w-9">
+                        <i class="fa-brands fa-linkedin-in fa-xl" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="border-t hidden lg:flex items-center justify-between gap-10 p-10">
+            <div class="flex flex-col">
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text1">Sobre Nosotros</a>
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text2">Servicio Post Venta</a>
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text3">Ventas Corporativas</a>
+            </div>
+
+            <div class="flex flex-col">
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text4">Libro de Reclamaciones</a>
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text5">Facturación electrónica</a>
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text6">Preguntas frecuentes</a>
+            </div>
+
+            <div class="flex flex-col">
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text7">Políticas de Privacidad</a>
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text8">Garantía y Conservación del cuero</a>
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text9">Términos y condiciones</a>
+            </div>
+
+            <div class="flex flex-col">
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text10">Configuración de Cookies</a>
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text11">Contáctanos</a>
+                <a href="" class="text-white hover:underline" data-section="footer" data-value="text12">Nuestra Tienda</a>
+            </div>
+        </div>
+        
+        <!--Mobile-->
+
+        <div class="border-t lg:hidden">
+            <div class="flex items-center justify-between p-4">
+                <button id="botonTienda" class="font-nunito font-semibold text-white hover:underline">
+                    <p data-section="footer" data-value="tienda">Tienda</p>
+                </button>
+                <button id="botonMasTienda" class="fa-solid fa-plus" style="color: #ffffff;"></button>
+            </div>
+
+            <div id="tienda" class="hidden font-raleway">
+                <div class="flex">
+                    <div class="flex flex-col p-5">
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text1">Sobre Nosotros</a>
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text2">Servicio Post Venta</a>
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text3">Ventas Corporativas</a>
+                    </div>
+    
+                    <div class="flex flex-col p-5 pl-20">
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text4">Libro de Reclamaciones</a>
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text5">Facturación electrónica</a>
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text6">Preguntas frecuentes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between p-4">
+                <button id="botonInteres" class="font-nunito font-semibold text-white hover:underline">
+                    <p data-section="footer" data-value="enlaces">Enlaces de Interés</p>
+                </button>
+                <button id="botonMasInteres" class="fa-solid fa-plus" style="color: #ffffff;"></button>
+            </div>
+
+            <div id="interes" class="hidden font-raleway">
+                <div class="flex">
+                    <div class="flex flex-col p-5">
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text7">Políticas de Privacidad</a>
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text8">Garantía y Conservación del cuero</a>
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text9">Términos y condiciones</a>
+                    </div>
+    
+                    <div class="flex flex-col p-5">
+                        <a href="" class="text-white hover:underline"data-section="footer" data-value="text10">Configuración de Cookies</a>
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text11">Contáctanos</a>
+                        <a href="" class="text-white hover:underline" data-section="footer" data-value="text12">Nuestra Tienda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t">
+
+            <p class="font-nunito font-semibold text-white text-xs flex items-center justify-center py-7" data-section="footer" data-value="derechos">2023 Calzados C'Zhanel. Todos los derechos reservados</p>
+
+            <div class="flex items-center justify-center gap-5 pb-7">
+                <i class="fa-brands fa-cc-visa fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-cc-diners-club fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-cc-amex fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-cc-paypal fa-2xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+
+        <!--Mobile-->
+
+        <div class="flex justify-center items-center border-t lg:hidden">
+            <div class="bg-gray-600 dark:bg-slate-900 p-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.906191483665!2d-77.02651332599095!3d-12.049975141958388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b043110bb9%3A0x1ff84025065233a5!2sJr.%20Paruro%20637%2C%20Lima%2015001!5e0!3m2!1ses-419!2spe!4v1694661922916!5m2!1ses-419!2spe" width="350" height="450" style="border:0;" referrerpolicy="no-referrer-when-downgrade"
+                class="rounded-lg shadow-lg" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="border-t h-7 lg:hidden"></div>
+    </footer>
+
+    <div id="mapa" class="fixed inset-0 z-40 bg-white bg-opacity-60 dark:bg-gray-700 dark:bg-opacity-60 w-full h-full hidden">
+        <div class="flex justify-center">
+            <div class="bg-verde-dorado dark:bg-slate-900 p-10 rounded-3xl fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <i id="cerrarMapa" class="fa-solid fa-x fa-lg cursor-pointer absolute right-6 top-7" style="color: #4b5563;"></i>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.906191483665!2d-77.02651332599095!3d-12.049975141958388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b043110bb9%3A0x1ff84025065233a5!2sJr.%20Paruro%20637%2C%20Lima%2015001!5e0!3m2!1ses-419!2spe!4v1694661922916!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" referrerpolicy="no-referrer-when-downgrade"
+                class="rounded-lg shadow-lg" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="sesion" class="fixed inset-0 z-50 bg-white dark:bg-gray-700 dark:bg-opacity-60 bg-opacity-60 w-full h-full hidden">
+        <div class="flex justify-center">
+            <div class="font-semibold dark:bg-slate-900 bg-gradient-to-b from-slate-500 to-slate-200 dark:from-transparent dark:to-transparent p-10 rounded-3xl fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] dark:text-white">
+                <i id="cerrarSesion" class="fa-solid fa-x fa-lg cursor-pointer absolute right-6 top-7" style="color: #4b5563;"></i>
+                <div class="text-center">
+                    <h3 class="text-lg font-nunito font-extrabold" data-section="formLogIn" data-value="sesion2">Iniciar Sesión</h3>
+                    <form class="font-light">
+                        <input type="email" placeholder="Ingresa tu email" class="w-full mt-3 p-3 rounded-lg shadow border border-gray-400 focus:outline-none text-gray-800">
+                        <input type="password" placeholder="Ingresa una contraseña" class="w-full mt-3 p-3 rounded-lg shadow border border-gray-400 focus:outline-none text-gray-800">
+                        <button type="submit" class="w-full mt-2 p-4 rounded-lg focus:outline-none shadow font-semibold uppercase tracking-wider bg-red-950 dark:bg-blue-400 dark:hover:bg-blue-300 text-white dark:text-blue-900 hover:bg-red-600" data-section="formLogIn" data-value="entrar">ENTRAR</button>
+                    </form>
+                    <h4 class="text-lg pt-5 font-raleway" data-section="formLogIn" data-value="nocuenta">¿Aún no tienes una cuenta?</h4>
+                    <button class="w-full mt-2 p-4 rounded-lg focus:outline-none shadow uppercase tracking-wider text-white font-semibold bg-slate-600 hover:bg-slate-400 dark:bg-slate-600 dark:hover:bg-slate-500" data-section="formLogIn" data-value="crearcuenta">Crea una cuenta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=51949415908" target="_blank" class="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center focus:ring focus:ring-black fixed bottom-4 right-4 z-40">
+            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i>
+        </a>
+    </div>
+</body>
+</html>

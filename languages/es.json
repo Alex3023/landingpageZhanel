@@ -1,0 +1,55 @@
+{
+    "header":{
+        "headerPrincipal":"ENVÍOS A NIVEL NACIONAL",
+        "idioma":"Español",
+        "sesion":"Iniciar Sesión",
+        "promo": "Promociones",
+        "liqui": "Liquidación",
+        "pedido": "Mis pedidos"
+    },
+
+    "deslizable":{
+        "cuadro":"Nueva Colección",
+        "ver":"VER MÁS"
+    },
+
+    "novedadComen":{
+        "cuadro1":"ENTÉRATE DE NUESTRAS OFERTAS",
+        "ver1":"VER",
+        "cuadro2":"TENEMOS NOVEDADES PARA TI",
+        "ver2":"QUIERO SABER",
+        "reseña1": "CALIDAD Y CONFORT EN CADA PASO",
+        "opinion1":"He sido cliente de Calzados Zhanel por más de un año y cada compra supera mis expectativas. La calidad de los materiales es simplemente incomparable; se nota el cuidado y la dedicación en cada detalle, desde las costuras hasta los acabados...",
+        "reseña2": "CALIDEZ Y ELEGANCIA EN CADA DETALLE",
+        "opinion2": "Desde que mi esposa descubrió Calzados Zhanel, se ha convertido en su tienda favorita para comprar zapatos. Lo que más le fascina es la originalidad y frescura de los diseños que ofrecen. Cada pieza parece contar una historia única, reflejando una perfecta armonía entre lo moderno y lo clásico...",
+        "reseña3": "ATENCIÓN PERSONALIZADA QUE MARCA LA DIFERENCIA",
+        "opinion3": "Lo que realmente destaco es la paciencia y dedicación del equipo de ventas. Están siempre dispuestos a ayudarme a encontrar el par perfecto, ofreciendo recomendaciones honestas y ajustadas a mis necesidades y preferencias. Además, su conocimiento profundo sobre cada producto, desde los materiales hasta los consejos de cuidado, me brinda confianza y seguridad en cada compra..."
+    },
+
+    "footer":{
+        "envio":"Envío y devoluciones",
+        "redes":"Redes Sociales",
+        "text1":"Sobre Nosotros",
+        "text2":"Servicio Post Venta",
+        "text3":"Ventas Corporativas",
+        "text4":"Libro de Reclamaciones",
+        "text5":"Facturación electrónica",
+        "text6":"Preguntas frecuentes",
+        "text7":"Políticas de Privacidad",
+        "text8":"Garantía y Conservación del cuero",
+        "text9":"Términos y condiciones",
+        "text10":"Configuración de Cookies",
+        "text11":"Contáctanos",
+        "text12":"Nuestra Tienda",
+        "tienda":"Tienda",
+        "enlaces": "Enlaces de Interés",
+        "derechos": "2023 Calzados C'Zhanel. Todos los derechos reservados"
+    },
+
+    "formLogIn":{
+        "sesion2": "Iniciar Sesión",
+        "entrar":"ENTRAR",
+        "nocuenta":"¿Aún no tienes una cuenta?",
+        "crearcuenta": "CREA UNA CUENTA"
+    }
+}

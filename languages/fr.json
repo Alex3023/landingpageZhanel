@@ -1,0 +1,55 @@
+{
+    "header":{
+        "headerPrincipal":"EXPÉDITION DANS TOUT LE NATIONAL",
+        "idioma":"Français",
+        "sesion":"Commencer la session",
+        "promo": "Promotions",
+        "liqui": "Règlement",
+        "pedido": "Mes commandes"
+    },
+
+    "deslizable":{
+        "cuadro":"Nouvelle collection",
+        "ver":"VOIR PLUS"
+    },
+
+    "novedadComen":{
+        "cuadro1":"DÉCOUVREZ NOS OFFRES",
+        "ver1":"REGARDER",
+        "cuadro2":"NOUS AVONS DES NOUVELLES POUR VOUS",
+        "ver2":"JE VEUX SAVOIR",
+        "reseña1": "QUALITÉ ET CONFORT À CHAQUE ÉTAPE",
+        "opinion1":"Je suis client de Calzados Zhanel depuis plus d'un an et chaque achat dépasse mes attentes. La qualité des matériaux est tout simplement incomparable ; Vous pouvez voir le soin et le dévouement dans chaque détail, des coutures aux finitions...",
+        "reseña2": "CHALEUR ET ÉLÉGANCE DANS CHAQUE DÉTAIL",
+        "opinion2": "Depuis que ma femme a découvert Calzados Zhanel, c'est devenu son magasin préféré pour acheter des chaussures. Ce qui le fascine le plus, c'est l'originalité et la fraîcheur des créations qu'ils proposent. Chaque pièce semble raconter une histoire unique, reflétant une parfaite harmonie entre moderne et classique...",
+        "reseña3": "UNE ATTENTION PERSONNALISÉE QUI FAIT LA DIFFÉRENCE",
+        "opinion3": "Ce qui ressort vraiment, c'est la patience et le dévouement de l'équipe commerciale. Ils sont toujours prêts à m’aider à trouver la paire parfaite, en me proposant des recommandations honnêtes adaptées à mes besoins et préférences. De plus, leur connaissance approfondie de chaque produit, des matériaux aux conseils d'entretien, me donne confiance et sécurité dans chaque achat..."
+    },
+
+    "footer":{
+        "envio":"Expédition & retours",
+        "redes":"Réseaux sociaux",
+        "text1":"À propos de nous",
+        "text2":"Service après vente",
+        "text3":"Les ventes aux entreprises",
+        "text4":"Cahiers de doléances",
+        "text5":"Facture électronique",
+        "text6":"Questions fréquentes",
+        "text7":"Les politiques de confidentialité",
+        "text8":"Garantie et Conservation du cuir",
+        "text9":"Termes et conditions",
+        "text10":"Paramètres des cookies",
+        "text11":"Contactez-nous",
+        "text12":"Notre magasin",
+        "tienda":"Boutique",
+        "enlaces": "Liens d'intérêt",
+        "derechos": "2023 Calzados C'Zhanel. Tous droits réservés"
+    },
+
+    "formLogIn":{
+        "sesion2": "Commencer La Session",
+        "entrar":"MONTEZ",
+        "nocuenta":"Vous n'avez pas encore de compte ?",
+        "crearcuenta": "CRÉER UN COMPTE"
+    }
+}
